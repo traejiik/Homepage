@@ -1,12 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    position: relative;
+  height: 150vh;
+  position: relative;
+  background-color: black;
+  color: azure;
+  font-family: 'outfit';
+}
+
+.container {
+  height: 100%;
+}
+
+header {
+  height: 33%;
+  /* background-color: darkcyan; */
+}
+
+header::after {
+  content: '';
+  display: block;
+  transform: skewY(-5deg);
+  transform-origin: top left;
+  background-color: darkcyan;
+  margin-top: -50px;
 }

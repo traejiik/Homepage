@@ -9,7 +9,9 @@
 body {
   height: 150vh;
   position: relative;
-  background-color: black;
+  background-color: #2C3539
+
+;
   color: azure;
   font-family: 'outfit';
 }
@@ -19,7 +21,10 @@ body {
 }
 
 header {
-  height: 33%;
+  height: 30%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
   /* background-color: darkcyan; */
 }
 
@@ -28,6 +33,21 @@ header::after {
   display: block;
   transform: skewY(-5deg);
   transform-origin: top left;
+  background-color: #0B1D3A
+;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  z-index: -1;
+}
+
+main {
+  height: 40%;
+}
+
+footer {
   background-color: darkcyan;
-  margin-top: -50px;
+  height: 30%;
 }

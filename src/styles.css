@@ -93,6 +93,17 @@ footer h2 {
   border-radius: 0 1rem 1rem 0;
 }
 
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.iconCtn {
+  display: flex;
+  gap: 10px;
+}
+
 main {
   margin-top: 60px;
   padding: 50px;
@@ -128,6 +139,16 @@ main {
   border-radius: 1rem;
 }
 
+.titleBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconBox {
+  display: flex;
+  gap: 5px;
+}
+
 .card > .contentCtn {
   padding: 1rem;
 }
@@ -161,6 +182,12 @@ footer .imageBox {
   font-size: 18px;
 }
 
+.footLine {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 @media screen and (min-width: 601px) and (max-width: 1200px) {
   h3 {
     font-size: 1.6rem;
@@ -184,9 +211,10 @@ footer .imageBox {
   }
 
   .imageBox h1 {
-    transform: translate(270px, -250px);
+    transform: translate(260px, -250px);
     color: white;
     white-space: nowrap;
+    text-shadow: 2px 2px 5px #0e1f2f;
   }
 
   header .contentBox {
@@ -217,10 +245,14 @@ footer .imageBox {
 
   header .imageBox {
     font-size: 2rem;
-    width: 100%;
+    max-width: 100%;
     height: 500px;
     max-height: 600px;
     box-shadow: 0 4px 12px 4px rgba(255, 255, 255, 0.25);
+  }
+
+  header .imageBox h1 {
+    text-shadow: 4px 4px 5px grey;
   }
 
   header .contentBox {
@@ -244,7 +276,8 @@ footer .imageBox {
   }
 
   main {
-    padding: 2rem;
+    padding: 0 2rem 2rem;
+    margin-top: 0;
   }
 
   .cardContainer {
@@ -264,5 +297,9 @@ footer .imageBox {
   footer .imageBox {
     max-width: 100%;
     border-radius: 0;
+  }
+
+  .iconCtn {
+    justify-content: center;
   }
 }
